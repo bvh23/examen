@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+	margin: 0px auto;
+	padding: 0px;
+	width: auto;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#container #header{
+	margin: 0px;
+	padding: 0px;
+	height:250px;
+	width: 800px;	
+}
+
+#container #header #logo{
+	background-image: url(../img/logoventana.png);
+	float: left;
+	width: 234px;
+	margin-left: 10px;
+	height: 197px;
+	z-index:1;
+}
+#container  #menu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1em;
+
+        
+}
+.inicio{
+    width: 800px;
+}
+ul, ol{
+    list-style: none;
+    
+}
+.inicio li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px;
+    display: block;
+    padding-left:20px;
+    padding-right:20px;
+    margin-right: 29px;
+}
+
+
+.inicio > li{
+    margin-left: 0px;
+    float: left;
+    border:solid 1px #d0d6bc;
+    background:url(../img/botonusuario.png) repeat-x 50% 90%;
+	-moz-border-radius-topleft: 26px;
+	-moz-border-radius-topright:26px;
+	-moz-border-radius-bottomleft:0px;
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-top-left-radius:26px;
+	-webkit-border-top-right-radius:26px;
+	-webkit-border-bottom-left-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-top-left-radius:26px;
+	border-top-right-radius:26px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.inicio li:hover{
+    background-color:#000;
+        -moz-border-radius-topleft: 26px;
+	-moz-border-radius-topright:26px;
+	-moz-border-radius-bottomleft:0px;
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-top-left-radius:26px;
+	-webkit-border-top-right-radius:26px;
+	-webkit-border-bottom-left-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-top-left-radius:26px;
+	border-top-right-radius:26px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+ 
+}
+
+.inicio ul {
+	height: 50px;
+	float: left;
+}
+.inicio li ul {
+    display: none;
+    position: absolute;
+       
+}
+.inicio li:hover > ul {
+    display: block;
+}
+.inicio li ul a{
+ background:url(../img/botonusuario.png) repeat-x 50% 90%;
+}
+.inicio li ul a:hover{
+ background-color:#000;
+ background-size: auto;
+}
+
+#container #cuerpo {        
+	clear:both;
+	width:800px;
+	-moz-box-shadow: -4px 0px 11px #664708;
+	-webkit-box-shadow: -4px 0px 11px #664708;
+	box-shadow: -4px 0px 11px #664708;
+	margin:0px auto;
+	height:400px;
+	background:url(../img/fondo.png) no-repeat 50% 90%;
+        
+}
+#container #cuerpo #imagen-izq {
+	float: left;
+	width:250px;
+	margin: 0px 0px 0px 1px ;
+	
+}
+#container #cuerpo #login {
+	width: 300px;
+	margin-right: 100px;
+	margin-left: 520px;
+	padding-top: 140px;
+
+}
+
+#container #cuerpo #login  td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-weight: bold;
+	text-align: center;
+        color: #ccc;
+}
+#container #cuerpo #login table .boton {
+	background-color: #CCC;
+	height: 22px;
+	width: 70px;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	list-style-type: none;
+}
+
+h1{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	position:absolute;
+	margin-left:25px;
+	top:100px;
+	margin-left:200px;
+	font-style:oblique;
+	
+	}
+        h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:35px;
+	position:absolute;
+	left:50px ;
+	top:200px;
+	margin-left:300px;
+	font-style:oblique;
+	text-decoration: none;
+	}
+.ac_results {
+	padding: 0px;
+	border: 1px solid #8a8a8a;
+	background-color: #8A8A8A;
+	overflow: hidden;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px ;
+	cursor: default;
+	display: block;
+	color: #fff;
+	font-family:verdana;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+
+}
+
+.ac_loading {
+	background: white url('../img/indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #9d9d9d;
+	color: #ffffff;
+}
+
+.ac_over {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.input_text{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	border:1px solid #CC00CC;
+	padding:2px;
+	width:150px;
+	color:#000;
+	background:white url(../img/search.png) no-repeat 3px 2px;
+	padding-left:10px;
+}
+#BuscarCliente {
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 25%;
+margin-top: 5%;
+text-align: center;
+}
+#BuscarCliente table .boton{
+    padding: 3px;
+    margin-top: 25px;
+    margin-left: 470px;
+    
+}
+#chat{    
+   
+    margin:-450px 0 0 0;
+    float: right;
+}
+#imagenesgif {
+  
+
+}
+#container #cuerpo #tabla{
+    margin:0px 150px;
+    padding-top: 25px;
+   
+}
+
+#Consulta{
+ margin-left: 40%;   
+}
+ 

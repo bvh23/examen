@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+        <link href="css/style.css" rel="stylesheet" type="text/css"></link>
+        <title>Crear</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateVehiculoTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateVehiculoLabel_placa}" for="placa" />
+                    <h:inputText id="placa" value="#{vehiculoController.selected.placa}" title="#{bundle.CreateVehiculoTitle_placa}" required="true" requiredMessage="#{bundle.CreateVehiculoRequiredMessage_placa}"/>
+                    <h:outputLabel value="#{bundle.CreateVehiculoLabel_modelo}" for="modelo" />
+                    <h:inputText id="modelo" value="#{vehiculoController.selected.modelo}" title="#{bundle.CreateVehiculoTitle_modelo}" />
+                    <h:outputLabel value="#{bundle.CreateVehiculoLabel_hora}" for="hora" />
+                    <h:inputText id="hora" value="#{vehiculoController.selected.hora}" title="#{bundle.CreateVehiculoTitle_hora}" />
+                    <h:outputLabel value="#{bundle.CreateVehiculoLabel_nombreCliente}" for="nombreCliente" />
+                    <h:inputText id="nombreCliente" value="#{vehiculoController.selected.nombreCliente}" title="#{bundle.CreateVehiculoTitle_nombreCliente}" />
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{vehiculoController.create}" value="#{bundle.CreateVehiculoSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{vehiculoController.prepareList}" value="#{bundle.CreateVehiculoShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateVehiculoIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
